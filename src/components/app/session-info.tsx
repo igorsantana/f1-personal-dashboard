@@ -1,7 +1,6 @@
-import { useFormulaContext, useFormulaDispatchContext } from "@/context";
 import { useDrivers } from "@/hooks/use-drivers";
 import { FormulaState } from "@/reducer";
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,6 +11,10 @@ import {
 import { ChevronDown } from "lucide-react";
 import ListItem from "../ui/list-item";
 import Driver from "@/type/Driver";
+import {
+  useFormulaContext,
+  useFormulaDispatchContext,
+} from "@/hooks/use-formula";
 
 const SessionInfoWithDrivers = ({
   children,

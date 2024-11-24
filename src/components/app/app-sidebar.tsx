@@ -24,8 +24,11 @@ import {
 } from "@/components/ui/collapsible";
 import { useMeetings } from "@/hooks/use-meetings";
 import Meeting from "@/type/Meeting";
-import { useFormulaContext, useFormulaDispatchContext } from "@/context";
 import FlagService from "@/services/FlagService";
+import {
+  useFormulaContext,
+  useFormulaDispatchContext,
+} from "@/hooks/use-formula";
 
 export function AppSidebar() {
   const state = useFormulaContext();

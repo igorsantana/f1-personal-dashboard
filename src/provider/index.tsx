@@ -1,10 +1,10 @@
 import { FormulaContext, FormulaDispatchContext } from "@/context";
-import FormulaReducer, { INITIAL_STATE } from "@/reducer";
-import { useReducer, ReactNode } from "react";
+
+import useFormulaReducer from "@/hooks/use-formula-reducer";
+import { ReactNode } from "react";
 
 export default function F1Provider({ children }: { children: ReactNode }) {
-  const [state, dispatch] = useReducer(FormulaReducer, INITIAL_STATE);
-
+  const [state, dispatch] = useFormulaReducer();
   return (
     <FormulaContext.Provider value={state}>
       <FormulaDispatchContext.Provider value={dispatch}>

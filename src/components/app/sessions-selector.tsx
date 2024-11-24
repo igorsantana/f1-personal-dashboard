@@ -1,4 +1,3 @@
-import { useFormulaContext, useFormulaDispatchContext } from "@/context";
 import { useSessions } from "@/hooks/use-sessions";
 import { FormulaState } from "@/reducer";
 import Session from "@/type/Session";
@@ -6,6 +5,10 @@ import { StepForward } from "lucide-react";
 import moment from "moment";
 import { useEffect } from "react";
 import { Card, CardHeader, CardTitle, CardDescription } from "../ui/card";
+import {
+  useFormulaDispatchContext,
+  useFormulaContext,
+} from "@/hooks/use-formula";
 
 export default function SessionsSelector() {
   const dispatch = useFormulaDispatchContext();

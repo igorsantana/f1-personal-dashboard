@@ -1,8 +1,8 @@
 import { Separator } from "@/components/ui/separator";
 import SessionsSelector from "./sessions-selector";
-import { useFormulaContext } from "@/context";
 import { FormulaState } from "@/reducer";
 import SessionInfo from "./session-info";
+import { useFormulaContext } from "@/hooks/use-formula";
 
 export default function MeetingPage() {
   const state: FormulaState = useFormulaContext();
@@ -15,7 +15,7 @@ export default function MeetingPage() {
       <Separator />
       <SessionsSelector />
       <Separator />
-      <SessionInfo/>
+      <SessionInfo />
     </>
   );
 }
