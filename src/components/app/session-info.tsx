@@ -20,8 +20,7 @@ const SessionInfoWithDrivers = ({
   children: ReactNode;
   drivers: Driver[];
 }) => {
-  if (drivers.length === 0) return <></>;
-  return <>{children}</>;
+  return <>{drivers.length > 0 && children}</>;
 };
 
 export default function SessionInfo() {
