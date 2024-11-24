@@ -1,12 +1,14 @@
+import Driver from "@/type/Driver";
 import Meeting from "@/type/Meeting";
 import Session from "@/type/Session";
 
-type FormulaAction = { type: string; value: number | Meeting | Session }
+type FormulaAction = { type: string; value: number | Meeting | Session | Driver }
 
 interface FormulaState {
     season: number;
     selectedMeeting?: Meeting;
     selectedSession?: Session;
+    selectedDriver?: Driver;
 }
 
 const INITIAL_STATE: FormulaState = {
@@ -22,6 +24,9 @@ function FormulaReducer(state: FormulaState, action: FormulaAction): FormulaStat
     }
     if (action.type === 'SESSION_SELECTED') {
         return { ...state, selectedSession: action.value as Session }
+    }
+    if (action.type === 'DRIVER_SELECTED') {
+        return { ...state, selectedDriver: action.value as Driver }
     }
     return state;
 }

@@ -9,7 +9,7 @@ export default function Layout() {
     <>
       <SidebarProvider>
         <AppSidebar />
-        <main className="w-full p-4">
+        <main className="w-full p-4 flex flex-col">
           <SidebarTrigger />
           <MeetingPage />
         </main>
