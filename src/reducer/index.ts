@@ -2,7 +2,7 @@ import Driver from "@/type/Driver";
 import Meeting from "@/type/Meeting";
 import Session from "@/type/Session";
 
-type FormulaAction = { type: string; value: number | Meeting | Session | Driver }
+type FormulaAction = { type: string; value: number | Meeting | Session | Driver | undefined }
 
 interface FormulaState {
     season: number;

@@ -1,6 +1,6 @@
 import { SidebarProvider, SidebarTrigger } from "../ui/sidebar";
 import { AppSidebar } from "./app-sidebar";
-import MeetingPage from "./meetings-page";
+import MeetingPage from "./session/meetings-page";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function Layout() {

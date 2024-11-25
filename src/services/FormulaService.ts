@@ -1,6 +1,7 @@
 import Driver from "@/type/Driver";
 import Meeting from "@/type/Meeting";
 import Session from "@/type/Session";
+import Weather from "@/type/Weather";
 
 const FormulaService = () => {
     const BASE_URL = 'https://api.openf1.org/v1/';
@@ -13,6 +14,7 @@ const FormulaService = () => {
         meetings: (params?: string) => getData<Meeting[]>('meetings', params),
         sessions: (params?: string) => getData<Session[]>('sessions', params),
         drivers: (params?: string) => getData<Driver[]>('drivers', params),
+        weather: (params?: string) => getData<Weather[]>('weather', params),
     }
 }
 

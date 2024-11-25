@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import SessionsSelector from "./sessions-selector";
+import SessionsSelector from "../sessions-selector";
 import { FormulaState } from "@/reducer";
 import SessionInfo from "./session-info";
 import { useFormulaContext } from "@/hooks/use-formula";

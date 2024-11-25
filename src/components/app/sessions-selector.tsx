@@ -46,9 +46,9 @@ export default function SessionsSelector() {
                 {moment(ses.date_start).format("DD/MM/YYYY")}
               </CardTitle>
               <CardDescription className="flex justify-center justify-evenly	">
-                {moment(ses.date_start).format("h:mm")}
+                {moment(ses.date_start).format("HH:mm")}
                 <StepForward size={18} />
-                {moment(ses.date_end).format("h:mm")}
+                {moment(ses.date_end).format("HH:mm")}
               </CardDescription>
             </CardHeader>
           </Card>
