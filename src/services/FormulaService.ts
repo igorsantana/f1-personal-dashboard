@@ -1,5 +1,6 @@
 import Driver from "@/type/Driver";
 import Meeting from "@/type/Meeting";
+import RaceControl from "@/type/RaceControl";
 import Session from "@/type/Session";
 import Weather from "@/type/Weather";
 
@@ -15,6 +16,7 @@ const FormulaService = () => {
         sessions: (params?: string) => getData<Session[]>('sessions', params),
         drivers: (params?: string) => getData<Driver[]>('drivers', params),
         weather: (params?: string) => getData<Weather[]>('weather', params),
+        raceControl: (params?: string) => getData<RaceControl[]>('race_control', params),
     }
 }
 
